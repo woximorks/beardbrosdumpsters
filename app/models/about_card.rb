@@ -1,0 +1,2 @@
+class AboutCard < ApplicationRecord
+end

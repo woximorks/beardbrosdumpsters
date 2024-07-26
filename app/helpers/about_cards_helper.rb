@@ -1,0 +1,2 @@
+module AboutCardsHelper
+end
