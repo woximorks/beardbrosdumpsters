@@ -27,18 +27,24 @@
     - https://stackoverflow.com/questions/44407614/image-does-not-display-on-heroku
 
 3. Basic database info and commands to get connected
-    - Backup - https://www.postgresql.org/docs/8.1/backup.html
-    - https://www.dbvis.com/thetable/a-complete-guide-to-pg-dump-with-examples-tips-and-tricks/
-    - https://devcenter.heroku.com/articles/heroku-postgres-import-export
-    - https://devcenter.heroku.com/articles/managing-heroku-postgres-using-cli
-    
+
     - Open PSQL
         - psql -h localhost -d postgres
     - Show connection info necessary to connect to server
         - \conninfo
     - Backup database to sql file
-        - pg_dump -U username -d beardbrosdumpsters_development -f beardbrosdumpsters_development_backup.sql --create
+        - pg_dump -U username -d database_name -f database_name_backup.sql --create
+            - This creates a backup of an existing database_name
+        - psql -d beardbrosdumpsters_development -f path/to/where/it/lives/beardbrosdumpsters_development_backup.sql
+            - Create database populated with backup file
+        - Added backup folder and containing files (*) to gitignore file, so that these will not be pushed to the repository
+            - Will need to back these files up elsewhere
+        - Some notes about running pg_dump - I did upgrade to postgresql@15 with brew to run this. It broke a bunch of stuff but running gem install pg fixed it (https://gorails.com/forum/rails-7-and-postgres-15)
     - Destroy entire database (use this one if you want to give yourself a headache) -
         - DROP DATABASE "databasename";
-    - Create database populated with backup file
-        - psql -d beardbrosdumpsters_development -f beardbrosdumpsters_development_backup.sql
+    - Resources / Related Articles
+        - https://www.postgresql.org/docs/8.1/backup.html
+        - https://www.dbvis.com/thetable/a-complete-guide-to-pg-dump-with-examples-tips-and-tricks/
+        - https://devcenter.heroku.com/articles/heroku-postgres-import-export
+        - https://devcenter.heroku.com/articles/managing-heroku-postgres-using-cli
+        - https://stackoverflow.com/questions/24930923/postgresql-where-does-the-output-of-pg-dump-go
