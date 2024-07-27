@@ -1,1 +1,16 @@
 <%= render "shared/nestednav" %>
+
+<div id="heading3">
+    <% @site_vars.each do |site_var| %>
+        <h3><%= site_var.site_var_heading3 %></h3>
+    <% end %>
+</div>
+
+
+<div id="schedule">
+    <%= month_calendar do |date| %>
+        <%= date.day %>
+    <% end %>
+</div>
+
+<%= render "shared/pricing" %>

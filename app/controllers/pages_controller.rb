@@ -12,9 +12,12 @@ class PagesController < ApplicationController
   end
 
   def events
+    @site_vars = SiteVar.all
     @articles = Article.all
   end
 
   def schedule
+    @site_vars = SiteVar.all
+    @pricing_cards = PricingCard.all
   end
 end

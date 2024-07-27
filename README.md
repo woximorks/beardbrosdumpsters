@@ -48,3 +48,25 @@
         - https://devcenter.heroku.com/articles/heroku-postgres-import-export
         - https://devcenter.heroku.com/articles/managing-heroku-postgres-using-cli
         - https://stackoverflow.com/questions/24930923/postgresql-where-does-the-output-of-pg-dump-go
+
+4. Front end update, including Bootstrap implementation, simple calendar Gem added
+    - 4.1 Adding the necessary Gems
+        - gem 'bootstrap', '~> 5.3.3'
+        - gem 'dartsass-sprockets'
+        - gem "simple_calendar"
+        - Ran command: bundle install
+    - 4.2 Make the css file a sass file
+        - Imported appropriate libraries
+            - @import "bootstrap";
+            - @import "simple_calendar";
+        - Adding some basic styling throughout utilizing flex concepts
+    - 4.3 Added simple calendar that needs to be on it's own page for now
+        - Every time I click on any of the links to change the dates displayed, it auto-scrolls to the very top of the page
+        - Updated beginning of week globally to Sunday for this calendar to display appropriately
+    - 4.4 Other mentions
+        - Seed file contains the necessary info to populate this site with some filler for now
+        - Updated image type to PNG so that they display without having to make any other adjustments to rails settings
+        - Created development_2_backup.sql
+    - Resources / Related Articles
+        - https://github.com/twbs/bootstrap-rubygem 
+        - https://github.com/excid3/simple_calendar

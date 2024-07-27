@@ -23,5 +23,7 @@ module Beardbrosdumpsters
     #
     # config.time_zone = "Central Time (US & Canada)"
     # config.eager_load_paths << Rails.root.join("extras")
+    # Pretty self explanatory, see 'Beginning of week' section https://github.com/excid3/simple_calendar
+    config.beginning_of_week = :sunday
   end
 end
