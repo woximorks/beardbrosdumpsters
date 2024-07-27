@@ -1,4 +1,8 @@
 Rails.application.routes.draw do
+  get 'pages/home'
+  get 'pages/pricing'
+  get 'pages/events'
+  get 'pages/schedule'
   resources :site_vars
   resources :articles
   resources :about_cards
@@ -10,5 +14,5 @@ Rails.application.routes.draw do
   get "up" => "rails/health#show", as: :rails_health_check
 
   # Defines the root path route ("/")
-  # root "posts#index"
+  root "pages#home"
 end

@@ -1,0 +1,25 @@
+<%= render "shared/nav" %>
+
+<div id="heading1">
+    <% @site_vars.each do |site_var| %>
+        <h3><%= site_var.site_var_heading1 %></h3>
+    <% end %>
+</div>
+
+<%= render "shared/about" %>
+
+<div id="heading2">
+    <% @site_vars.each do |site_var| %>
+        <h3><%= site_var.site_var_heading2 %></h3>
+    <% end %>
+</div>
+
+<%= render "shared/pricing" %>
+
+<div id="heading3">
+    <% @site_vars.each do |site_var| %>
+        <h3><%= site_var.site_var_heading3 %></h3>
+    <% end %>
+</div>
+
+<%= render "shared/blog" %>

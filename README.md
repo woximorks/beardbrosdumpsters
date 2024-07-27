@@ -12,19 +12,33 @@
     - verify database.yml file contains reference to postgresql
     - Create "Procfile"
         - Added info related to boot process for server
-    - ran command: git init
+    - ran commands (separated by |): git init | git add . | git commit -m "init"
+        - To initialize, stage, and commit all added files to be pushed to repository
 
 2. Initial framework 
-    - rails g scaffold PricingCard pricing_card_title pricing_card_description:text pricing_card_image_url pricing_card_total_cost:integer
-    - rails g scaffold AboutCard about_card_title about_card_description:text about_card_image_url 
-    - rails g scaffold Article article_title article_body:text article_description article_image_url
-    - rails g scaffold SiteVar site_var_heading1 site_var_heading2 site_var_heading3 site_var_heading4 site_var_heading5 site_var_disclaimer1
+    - ran command: rails g scaffold PricingCard pricing_card_title pricing_card_description:text pricing_card_image_url pricing_card_total_cost:integer
+    - ran command: rails g scaffold AboutCard about_card_title about_card_description:text about_card_image_url 
+    - rand command: rails g scaffold Article article_title article_body:text article_description article_image_url
+    - ran command: rails g scaffold SiteVar site_var_heading1 site_var_heading2 site_var_heading3 site_var_heading4 site_var_heading5 site_var_disclaimer1
+    - ran command: rails g controller Pages home pricing events schedule
+    - Set routes accordingly
+    - Displaying basic content on the homepage through the use of shared views
+
     - https://stackoverflow.com/questions/44407614/image-does-not-display-on-heroku
 
-3. Basic database commands to connected
+3. Basic database info and commands to get connected
+    - Backup - https://www.postgresql.org/docs/8.1/backup.html
+    - https://www.dbvis.com/thetable/a-complete-guide-to-pg-dump-with-examples-tips-and-tricks/
+    - https://devcenter.heroku.com/articles/heroku-postgres-import-export
+    - https://devcenter.heroku.com/articles/managing-heroku-postgres-using-cli
+    
     - Open PSQL
         - psql -h localhost -d postgres
     - Show connection info necessary to connect to server
         - \conninfo
+    - Backup database to sql file
+        - pg_dump -U username -d beardbrosdumpsters_development -f beardbrosdumpsters_development_backup.sql --create
     - Destroy entire database (use this one if you want to give yourself a headache) -
         - DROP DATABASE "databasename";
+    - Create database populated with backup file
+        - psql -d beardbrosdumpsters_development -f beardbrosdumpsters_development_backup.sql

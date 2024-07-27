@@ -1,0 +1,15 @@
+<div id="about">
+    <% @about_cards.each do |about_card| %>
+        <ul>
+            <li>
+                <%= image_tag("#{about_card.about_card_image_url}") %>
+            </li>
+            <li>
+                <h5><%= about_card.about_card_title %></h5>
+            </li>
+            <li>
+                <h6><%= about_card.about_card_description %></h6>
+            </li>
+        </ul>
+    <% end %>
+</div>

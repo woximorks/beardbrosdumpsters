@@ -1,0 +1,18 @@
+<div id="pricing">
+    <% @pricing_cards.each do |pricing_card| %>
+        <ul>
+        <li>
+            <%= image_tag("#{pricing_card.pricing_card_image_url}") %>
+        </li>
+        <li>
+            <h4><%= pricing_card.pricing_card_title %></h4>
+        </li>
+        <li>
+            <%= pricing_card.pricing_card_description %>
+        </li>
+        <li>
+            <p>$<%= pricing_card.pricing_card_total_cost %></p>
+        </li>
+        </ul>
+    <% end %>
+</div>

@@ -1,0 +1,9 @@
+<%= render "shared/nestednav" %>
+
+<div id="heading2">
+    <% @site_vars.each do |site_var| %>
+        <h3><%= site_var.site_var_heading2 %></h3>
+    <% end %>
+</div>
+
+<%= render "shared/pricing" %>
