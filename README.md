@@ -27,7 +27,6 @@
     - https://stackoverflow.com/questions/44407614/image-does-not-display-on-heroku
 
 3. Basic database info and commands to get connected
-
     - Open PSQL
         - psql -h localhost -d postgres
     - Show connection info necessary to connect to server
@@ -70,3 +69,19 @@
     - Resources / Related Articles
         - https://github.com/twbs/bootstrap-rubygem 
         - https://github.com/excid3/simple_calendar
+
+5. Admin section, accessible using Devise Gem. SQL updates to production
+    - 5.1 - Adding Devise
+        - ran command: bundle add devise
+        - ran command: rails g devise:install
+            - Added line to development.rb related to emails devise will send
+        - rails g devise User
+        - rails db:migrate
+        - Removed registerable from the User model
+            - New accounts cannot be created
+        - Added authentication requirements to articles controller
+        - Created navuser shared view
+    - 5.2 - Updates to articles and how they display
+        - Update statements made to Heroku production server so that the correct images will associate on the articles
+        - Added 4 unique blog images that correspond to each article id
+        - Other view updates to get rid of bloat

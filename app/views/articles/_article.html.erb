@@ -1,22 +1,14 @@
 <div id="<%= dom_id article %>">
+
+  <%= image_tag("blog#{article.id}.png") %>
   <p>
-    <strong>Article title:</strong>
+    <strong>
     <%= article.article_title %>
+    </strong>
   </p>
 
   <p>
-    <strong>Article body:</strong>
     <%= article.article_body %>
-  </p>
-
-  <p>
-    <strong>Article description:</strong>
-    <%= article.article_description %>
-  </p>
-
-  <p>
-    <strong>Article image url:</strong>
-    <%= article.article_image_url %>
   </p>
 
 </div>
