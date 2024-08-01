@@ -89,3 +89,4 @@
 6. Addressing a bug
     - 6.1 - Alerts bug due to multiple tags added
         - The alerts p tag added to the application.html.erb file broke the front end due to that tag also being added within some other views directly. Removed every instance I could find for now
+    - 6.2 - Authentication where necessary

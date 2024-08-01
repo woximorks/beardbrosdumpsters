@@ -1,4 +1,5 @@
 class AboutCardsController < ApplicationController
+  before_action :authenticate_user!, except: [:index, :show]
   before_action :set_about_card, only: %i[ show edit update destroy ]
 
   # GET /about_cards or /about_cards.json

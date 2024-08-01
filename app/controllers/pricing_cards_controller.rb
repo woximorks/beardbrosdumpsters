@@ -1,4 +1,5 @@
 class PricingCardsController < ApplicationController
+  before_action :authenticate_user!, except: [:index, :show]
   before_action :set_pricing_card, only: %i[ show edit update destroy ]
 
   # GET /pricing_cards or /pricing_cards.json
