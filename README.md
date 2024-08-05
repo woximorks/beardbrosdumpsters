@@ -90,3 +90,13 @@
     - 6.1 - Alerts bug due to multiple tags added
         - The alerts p tag added to the application.html.erb file broke the front end due to that tag also being added within some other views directly. Removed every instance I could find for now
     - 6.2 - Authentication where necessary
+
+7. Updates to pricing
+    - 6.1 Updated pricing as follows
+        - "Weekend" (3 days) $450
+        - 1 week (7 days) $600
+        - 2 weeks (14 days) $1100
+        - These all include 1 ton of debris
+        - $125 / ton additional charge
+        - Pricing may vary depending on location etc
+    - 6.2 Included site_var_disclaimer1 within _pricing view

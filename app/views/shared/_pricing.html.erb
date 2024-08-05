@@ -15,4 +15,9 @@
         </li>
         </ul>
     <% end %>
+    <div id="disclaimer1">
+    <% @site_vars.each do |site_var| %>
+        <p><%= site_var.site_var_disclaimer1 %></p>
+    <% end %>
+    </div>
 </div>
