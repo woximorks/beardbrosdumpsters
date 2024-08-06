@@ -1,0 +1,2 @@
+class RentedDumpster < ApplicationRecord
+end

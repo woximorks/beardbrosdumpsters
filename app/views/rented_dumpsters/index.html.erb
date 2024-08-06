@@ -1,0 +1,14 @@
+<p style="color: green"><%= notice %></p>
+
+<h1>Rented dumpsters</h1>
+
+<div id="rented_dumpsters">
+  <% @rented_dumpsters.each do |rented_dumpster| %>
+    <%= render rented_dumpster %>
+    <p>
+      <%= link_to "Show this rented dumpster", rented_dumpster %>
+    </p>
+  <% end %>
+</div>
+
+<%= link_to "New rented dumpster", new_rented_dumpster_path %>

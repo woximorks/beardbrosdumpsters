@@ -8,9 +8,18 @@
 
 
 <div id="schedule">
-    <%= month_calendar do |date| %>
+    <%= month_calendar(events: @rented_dumpsters) do |date, rented_dumpsters| %>
         <%= date.day %>
-    <% end %>
+    
+        <% rented_dumpsters.each do |rented_dumpster| %>
+            <div>
+                <%= rented_dumpster.rented_dumpster_name %>
+                <%= rented_dumpster.rented_dumpster_address %>
+            </div>
+        <% end %>
+      <% end %>
 </div>
+
+<%= link_to "New rented dumpster", new_rented_dumpster_path %>
 
 <%= render "shared/pricing" %>

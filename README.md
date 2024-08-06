@@ -92,11 +92,18 @@
     - 6.2 - Authentication where necessary
 
 7. Updates to pricing
-    - 6.1 Updated pricing as follows
+    - 7.1 Updated pricing as follows
         - "Weekend" (3 days) $450
         - 1 week (7 days) $600
         - 2 weeks (14 days) $1100
         - These all include 1 ton of debris
         - $125 / ton additional charge
         - Pricing may vary depending on location etc
-    - 6.2 Included site_var_disclaimer1 within _pricing view
+    - 7.2 Included site_var_disclaimer1 within _pricing view
+    - 7.3 Ran necessary SQL to update these prices and related descriptions
+
+8. Simple Calendar Upgrades
+ - 8.1 Create RentedDumpster scaffold
+    - rails g scaffold RentedDumpster rented_dumpster_name rented_dumpster_address start_time:datetime end_time:datetime
+    - added to pages controller and schedule view to display some very basic information on the calendar related to the rented dumpsters
+    - Logic to ensure user is signed in before creating a rented_dumpster

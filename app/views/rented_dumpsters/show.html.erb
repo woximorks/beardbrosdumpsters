@@ -1,0 +1,10 @@
+<p style="color: green"><%= notice %></p>
+
+<%= render @rented_dumpster %>
+
+<div>
+  <%= link_to "Edit this rented dumpster", edit_rented_dumpster_path(@rented_dumpster) %> |
+  <%= link_to "Back to rented dumpsters", rented_dumpsters_path %>
+
+  <%= button_to "Destroy this rented dumpster", @rented_dumpster, method: :delete %>
+</div>

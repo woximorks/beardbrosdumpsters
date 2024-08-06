@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema[7.1].define(version: 2024_07_28_045649) do
+ActiveRecord::Schema[7.1].define(version: 2024_08_05_050742) do
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
 
@@ -36,6 +36,15 @@ ActiveRecord::Schema[7.1].define(version: 2024_07_28_045649) do
     t.text "pricing_card_description"
     t.string "pricing_card_image_url"
     t.integer "pricing_card_total_cost"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
+  create_table "rented_dumpsters", force: :cascade do |t|
+    t.string "rented_dumpster_name"
+    t.string "rented_dumpster_address"
+    t.datetime "start_time"
+    t.datetime "end_time"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end
