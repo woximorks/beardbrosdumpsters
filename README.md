@@ -103,7 +103,14 @@
     - 7.3 Ran necessary SQL to update these prices and related descriptions
 
 8. Simple Calendar Upgrades
- - 8.1 Create RentedDumpster scaffold
-    - rails g scaffold RentedDumpster rented_dumpster_name rented_dumpster_address start_time:datetime end_time:datetime
-    - added to pages controller and schedule view to display some very basic information on the calendar related to the rented dumpsters
-    - Logic to ensure user is signed in before creating a rented_dumpster
+    - 8.1 Create RentedDumpster scaffold
+        - rails g scaffold RentedDumpster rented_dumpster_name rented_dumpster_address start_time:datetime end_time:datetime
+        - added to pages controller and schedule view to display some very basic information on the calendar related to the rented dumpsters
+        - Logic to ensure user is signed in before creating a rented_dumpster
+
+9. Logo updated, Starter article added
+    - 9.1 Updated logo
+        - Used ChatGPT to generate some of it
+    - 9.2 Article updates
+        - Added the article description to the article show
+        - Seed file contains actual starter article with a shameless plug
