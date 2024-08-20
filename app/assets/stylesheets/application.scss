@@ -25,7 +25,6 @@
 
  img {
    max-width: 100%;
-   min-width: 100%;
    height: auto;
 }
 
@@ -40,6 +39,7 @@
     flex-wrap: wrap;
     img {
       height: 200px;
+      min-width: 100%;
     }
     ul {
        display: flex;
@@ -87,4 +87,9 @@
           width: 60vw;
        }
     }
+  }
+
+  #news {
+   display: flex;
+   justify-content: center;
   }
