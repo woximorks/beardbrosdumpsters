@@ -108,9 +108,9 @@
         - added to pages controller and schedule view to display some very basic information on the calendar related to the rented dumpsters
         - Logic to ensure user is signed in before creating a rented_dumpster
 
-9. Logo updated, Starter article added
-    - 9.1 Updated logo
-        - Used ChatGPT to generate some of it
-    - 9.2 Article updates
-        - Added the article description to the article show
-        - Seed file contains actual starter article with a shameless plug
+9. Front-end Updates using ChatGPT
+ - 9.1 Nav logo updated
+ - 9.2 News & Events header created
+ - 9.3 Seed file updated to move some of the content around
+ - 9.4 Home view updated to remove unnecessary bloat
+ - 9.5 Simple flex CSS added

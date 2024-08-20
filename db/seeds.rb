@@ -30,18 +30,23 @@
 #   end
 
 AboutCard.create!([{
-    about_card_title: "Dumpster Rentals | Junk Removal",
-    about_card_description: "Fast and affordable dumpster delivery options, servicing the greater Pennsylvania area",
+    about_card_title: "Dumpster Rentals with Delivery Service",
+    about_card_description: "Fast and affordable dumpster delivery options, servicing the greater Pennsylvania area. We drop it off, you fill it up with junk, we pick it up. Pretty easy!",
     about_card_image_url: "about1"
-},
-{
-    about_card_title: "You Call, We Haul",
-    about_card_description: "Contact us today to schedule your next delivery. Need a hand with the heavy lifting? Bro & a Bin service has you covered",
-    about_card_image_url: "about2",
 },
 {
     about_card_title: "Putting Your Junk in Our Trunk Since 2023",
     about_card_description: "If the junk is there, we can make it disappear. Give us a shout and throw it out today!",
+    about_card_image_url: "about2",
+},
+{
+<<<<<<< HEAD
+    about_card_title: "Putting Your Junk in Our Trunk Since 2023",
+    about_card_description: "If the junk is there, we can make it disappear. Give us a shout and throw it out today!",
+=======
+    about_card_title: "You Call, We Haul",
+    about_card_description: "Contact us today to schedule your next delivery. Head on over to the pricing section to see a breakdown of our associated costs! Our schedule page shows our general dumpster availability.",
+>>>>>>> 1045e16 (Front-end Updates using ChatGPT)
     about_card_image_url: "about3",
 }
 =begin
@@ -54,8 +59,8 @@ AboutCard.create!([{
 ])
 
 Article.create!([{
-    article_title: "Our website is live!",
-    article_description: "Thanks to our friends over at getawd.com, this site is now ready to go!",
+    article_title: "beardbrosdumpsters.com - our new website!",
+    article_description: " Thanks to our friends over at getawd.com, this site is now ready to go!",
     article_body: "Here at Beard Bros Dumpsters, we offer fast and affordable dumpster delivery options in the greater Pennsylvania area. If the junk is there, we would be happy to make it disappear! The pricing page contains a breakdown of our transparent and affordable pricing options. Ready to dump some junk? Give us a call or send us an email now, head on over to the schedule page where you can see all of our contact options!",
     article_image_url: "blog1"
 }
@@ -111,14 +116,7 @@ PricingCard.create!([{
     pricing_card_description: "A 2 week (14 day) rental, including up to 6,000lbs of junk",
     pricing_card_image_url: "pricing1",
     pricing_card_total_cost: 1500
-},
-{
-    pricing_card_title: "Bro and a Bin",
-    pricing_card_description: "Short term (8hr) rental, including a helper (beard not necessicarily included)",
-    pricing_card_image_url: "pricing1",
-    pricing_card_total_cost: 600
 }
-
 =begin
 {
     pricing_card_title: "",
