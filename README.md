@@ -109,8 +109,9 @@
         - Logic to ensure user is signed in before creating a rented_dumpster
 
 9. Front-end Updates using ChatGPT
- - 9.1 Nav logo updated
- - 9.2 News & Events header created
- - 9.3 Seed file updated to move some of the content around
- - 9.4 Home view updated to remove unnecessary bloat
- - 9.5 Simple flex CSS added
+    - 9.1 Nav logo updated
+    - 9.2 News & Events header created
+    - 9.3 Seed file updated to move some of the content around
+    - 9.4 Home view updated to remove unnecessary bloat
+    - 9.5 Simple flex CSS added
+    - 9.6 Removed ability to create a rented dumpster

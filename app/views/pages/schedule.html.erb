@@ -1,10 +1,5 @@
 <%= render "shared/nestednav" %>
 
-<div id="heading3">
-    <% @site_vars.each do |site_var| %>
-        <h3><%= site_var.site_var_heading3 %></h3>
-    <% end %>
-</div>
 
 
 <div id="schedule">
@@ -20,6 +15,6 @@
       <% end %>
 </div>
 
-<%= link_to "New rented dumpster", new_rented_dumpster_path %>
+<!--<%= link_to "Rent a Dumpster!", new_rented_dumpster_path %>-->
 
 <%= render "shared/pricing" %>
