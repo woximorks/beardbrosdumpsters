@@ -40,13 +40,8 @@ AboutCard.create!([{
     about_card_image_url: "about2",
 },
 {
-<<<<<<< HEAD
-    about_card_title: "Putting Your Junk in Our Trunk Since 2023",
-    about_card_description: "If the junk is there, we can make it disappear. Give us a shout and throw it out today!",
-=======
     about_card_title: "You Call, We Haul",
     about_card_description: "Contact us today to schedule your next delivery. Head on over to the pricing section to see a breakdown of our associated costs! Our schedule page shows our general dumpster availability.",
->>>>>>> 1045e16 (Front-end Updates using ChatGPT)
     about_card_image_url: "about3",
 }
 =begin
