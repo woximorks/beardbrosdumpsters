@@ -115,3 +115,7 @@
     - 9.4 Home view updated to remove unnecessary bloat
     - 9.5 Simple flex CSS added
     - 9.6 Removed ability to create a rented dumpster
+
+10. DB stuff
+    - 10.1 Ran some prod updates to change pricing disclaimer, URLs to include www., etc
+    - 10.2 add asterisk to prices displayed
