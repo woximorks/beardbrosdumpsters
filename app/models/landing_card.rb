@@ -1,0 +1,2 @@
+class LandingCard < ApplicationRecord
+end

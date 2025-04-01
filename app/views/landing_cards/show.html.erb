@@ -1,0 +1,10 @@
+<p style="color: green"><%= notice %></p>
+
+<%= render @landing_card %>
+
+<div>
+  <%= link_to "Edit this landing card", edit_landing_card_path(@landing_card) %> |
+  <%= link_to "Back to landing cards", landing_cards_path %>
+
+  <%= button_to "Destroy this landing card", @landing_card, method: :delete %>
+</div>

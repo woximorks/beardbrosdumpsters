@@ -1,4 +1,9 @@
 Rails.application.routes.draw do
+  resources :videos
+  resources :rentals
+  resources :articles
+  resources :pricing_cards
+  resources :landing_cards
   devise_for :users
   # Define your application routes per the DSL in https://guides.rubyonrails.org/routing.html
 
