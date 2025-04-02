@@ -1,22 +1,18 @@
-<div id="<%= dom_id article %>">
-  <p>
-    <strong>Title:</strong>
-    <%= article.title %>
-  </p>
+<div id="<%= dom_id(article) %>" class="article">
+  <h1><%= article.title %></h1>
 
-  <p>
-    <strong>Description:</strong>
-    <%= article.description %>
-  </p>
+  <div class="article-description">
+    <p><%= article.description %></p>
+  </div>
 
-  <p>
-    <strong>Body:</strong>
-    <%= article.body %>
-  </p>
+  <div class="article-body">
+    <p><%= article.body %></p>
+  </div>
 
-  <p>
-    <strong>Image:</strong>
-    <%= article.image %>
-  </p>
-
+  <% if article.image.present? %>
+    <div class="article-image">
+      <%= image_tag article.image, alt: article.title %>
+    </div>
+  <% end %>
 </div>
+

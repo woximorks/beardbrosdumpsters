@@ -1,0 +1,34 @@
+.article {
+    margin: 20px;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background-color: #f9f9f9;
+  }
+  
+  .article h1 {
+    font-size: 2em;
+    margin-bottom: 10px;
+  }
+  
+  .article-description p {
+    font-size: 1.1em;
+    color: #555;
+  }
+  
+  .article-body p {
+    font-size: 1em;
+    color: #333;
+    line-height: 1.5;
+  }
+  
+  .article-image {
+    margin-top: 20px;
+    text-align: center;
+  }
+  
+  .article-image img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+  }  

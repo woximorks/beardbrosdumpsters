@@ -1,3 +1,18 @@
+## [0.1.6] - 2025/03/14
+### Pre-Release
+
+### Added
+- **`console.rb`** added to `.gitignore`.
+- **`article.scss`** stylesheet added.
+
+### Changed
+- Updated **`article`**:
+  - Display images on the article show page.
+  - Featured articles section added.
+  - Articles cannot be edited without authentication.
+- Updated **`nav`**:
+  - Changed `logout` to a button to prevent errors.
+
 ## [0.1.5] - 2025/03/14
 ### Pre-Release
 
