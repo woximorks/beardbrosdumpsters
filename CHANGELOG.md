@@ -1,4 +1,11 @@
+## [0.1.3] - 2025/03/14
+### Pre-Release
 
+### Added
+- Basic layout established with navigation and footer.
+
+### Changed
+- Commented out `sign_in` related sections for now in the navigation.
 
 ## [0.1.2] - 2025/03/14  
 ### Pre-Release  
