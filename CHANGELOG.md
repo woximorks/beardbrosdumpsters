@@ -1,4 +1,11 @@
-## [0.1.6] - 2025/03/14
+## [0.1.7] - 2025/04/02
+### Pre-Release
+
+### Changed
+- Imported `simple-calendar` into **`application.scss`**.
+- Added emoji support between **`models/rental.rb`** and **`rentals/index.html.erb`**.
+
+## [0.1.6] - 2025/04/01
 ### Pre-Release
 
 ### Added
@@ -13,7 +20,7 @@
 - Updated **`nav`**:
   - Changed `logout` to a button to prevent errors.
 
-## [0.1.5] - 2025/03/14
+## [0.1.5] - 2025/04/01
 ### Pre-Release
 
 ### Changed
@@ -24,7 +31,7 @@
 - Added logo and landing images (1-3).
 - Updated homepage to display landing information.
 
-## [0.1.4] - 2025/03/14
+## [0.1.4] - 2025/04/01
 ### Pre-Release
 
 ### Added
@@ -35,7 +42,7 @@
 ### Removed
 - confirmable from user model
 
-## [0.1.3] - 2025/03/14
+## [0.1.3] - 2025/04/01
 ### Pre-Release
 
 ### Added
@@ -44,7 +51,7 @@
 ### Changed
 - Commented out `sign_in` related sections for now in the navigation.
 
-## [0.1.2] - 2025/03/14  
+## [0.1.2] - 2025/04/01
 ### Pre-Release  
 
 ### Added  
@@ -57,7 +64,7 @@
 - **Routes**:  
   - Set root path to `home#index`.  
 
-## [0.1.1] - 2025/03/14
+## [0.1.1] - 2025/04/01
 ### Pre-Release
 
 ### Added
@@ -68,7 +75,7 @@
   - **`rental`**: `title`, `address`, `start_time`, `end_time`
   - **`video`**: `title`, `description`, `youtube_id`
 
-## [0.1.0] - 2025/03/14
+## [0.1.0] - 2025/04/01
 ### Pre-Release
 
 ### Added

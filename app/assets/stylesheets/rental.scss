@@ -1,0 +1,53 @@
+.calendar-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  max-width: 100vw;
+  max-height: 80vh;
+  padding: 10px;
+}
+
+.simple-calendar {
+  width: 100%;
+  border-collapse: collapse;
+  a {
+    text-decoration: none;
+    color: black;
+  }
+}
+
+th, td {
+  width: 14.2857%;
+  height: 60px;
+  text-align: center;
+  vertical-align: middle;
+  border: 1px solid #ddd;
+}
+
+th {
+  background-color: #f0f0f0;
+}
+
+td {
+  position: relative;
+  font-size: 1.2em;
+}
+
+td.current-month {
+  background-color: #f9f9f9;
+}
+
+td.today {
+  background-color: #ffeb3b;
+}
+
+.rental {
+  position: absolute;
+  bottom: 5px;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 1.2em;
+  padding: 5px;
+  color: #fff;
+}
