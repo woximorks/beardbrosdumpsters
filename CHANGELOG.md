@@ -1,3 +1,18 @@
+
+
+## [0.1.2] - 2025/03/14  
+### Pre-Release  
+
+### Added  
+- **`dashboard_controller`**:  
+  - Authenticates user and ensures approval before access.  
+- **`home_controller`**:  
+  - Serves as the public landing page.  
+
+### Changed  
+- **Routes**:  
+  - Set root path to `home#index`.  
+
 ## [0.1.1] - 2025/03/14
 ### Pre-Release
 
