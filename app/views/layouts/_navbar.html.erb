@@ -1,17 +1,24 @@
 <nav>
-  <ul>
+  <div class="logo">
+    <%= link_to image_tag("logo.png", alt: "Beard Bros Dumpsters"), root_path %>
+  </div>
+  
+  <ul class="nav-links">
     <li><%= link_to 'Home', root_path %></li>
     <li><%= link_to 'Articles', articles_path %></li>
     <li><%= link_to 'Rentals', rentals_path %></li>
     <li><%= link_to 'Videos', videos_path %></li>
-<!--
+
     <% if user_signed_in? %>
-        <li><%= link_to 'Dashboard', dashboard_path if current_user.approved? %></li>
-        <li><%= link_to 'Sign Out', destroy_user_session_path, method: :delete %></li>
+      <li class="user-subnav">
+        <%= link_to 'Dashboard', dashboard_path if current_user.approved? %>
+      </li>
+      <li>
+        <%= link_to 'Logout', destroy_user_session_path, method: :delete %>
+      </li>
     <% else %>
       <li><%= link_to 'Sign In', new_user_session_path %></li>
       <li><%= link_to 'Sign Up', new_user_registration_path %></li>
     <% end %>
--->
   </ul>
 </nav>

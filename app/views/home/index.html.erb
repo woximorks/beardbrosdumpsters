@@ -2,14 +2,14 @@
 <p>We offer a variety of dumpster delivery services to meet your needs!</p>
 
 <section class="landing-cards">
-  <% if @landing_cards.present? %>
+  <% if @featured_landing_cards.present? %>
     <ul>
-      <% @landing_cards.each do |card| %>
+      <% @featured_landing_cards.each do |card| %>
         <li>
           <h3><%= card.title %></h3>
           <p><%= card.description %></p>
-          <% if card.image.attached? %>
-            <%= image_tag card.image %>
+          <% if card.image.present? %>
+            <%= image_tag card.image, alt: card.title %>
           <% end %>
         </li>
       <% end %>

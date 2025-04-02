@@ -1,14 +1,13 @@
 <p style="color: green"><%= notice %></p>
 
-<h1>Rentals</h1>
+<h1>Rental Calendar</h1>
 
-<div id="rentals">
+<%= month_calendar do |date| %>
   <% @rentals.each do |rental| %>
-    <%= render rental %>
-    <p>
-      <%= link_to "Show this rental", rental %>
-    </p>
+    <% if rental.start_time.to_date <= date && rental.end_time.to_date >= date %>
+      <div class="rental">
+        <%= link_to rental.title, rental_path(rental) %>
+      </div>
+    <% end %>
   <% end %>
-</div>
-
-<%= link_to "New rental", new_rental_path %>
+<% end %>

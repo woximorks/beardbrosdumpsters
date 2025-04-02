@@ -1,5 +1,16 @@
-## [0.1.4] - 2025/03/14  
-### Pre-Release  
+## [0.1.5] - 2025/03/14
+### Pre-Release
+
+### Changed
+- Uncommented `user_signed_in?` from navigation.
+- Added calendar to **`rentals/index.html.erb`**.
+- Applied stylization throughout using `sassc` gem.
+  - Split styles into individual sections (e.g., nav, landing, etc.).
+- Added logo and landing images (1-3).
+- Updated homepage to display landing information.
+
+## [0.1.4] - 2025/03/14
+### Pre-Release
 
 ### Added
 - Home page content added.

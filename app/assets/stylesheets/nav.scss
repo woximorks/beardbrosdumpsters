@@ -1,0 +1,84 @@
+// Base styles for the nav
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: white; // Set background to white
+    padding: 15px;
+    font-family: 'Arial', sans-serif; // Change to a better font (default to Arial)
+  
+    img {
+      max-height: 150px;
+    }
+  
+    .logo {
+      font-size: 24px;
+      font-weight: bold;
+      color: #333; // Change text color to dark gray instead of white for better contrast
+    }
+  
+    .nav-links {
+      list-style: none;
+      display: flex;
+      gap: 20px;
+  
+      li {
+        display: inline;
+      }
+  
+      li a {
+        text-decoration: none;
+        color: #333; // Adjust text color to dark gray
+        font-size: 16px;
+        font-family: 'Arial', sans-serif; // Ensure consistency in font
+  
+        &:hover {
+          color: #f39c12;
+        }
+      }
+    }
+  
+    .user-subnav {
+      font-size: 14px;
+      color: #333; // Darker text for subnav
+  
+      a {
+        color: #333; // Adjust text color to dark gray
+  
+        &:hover {
+          color: #f39c12;
+        }
+      }
+    }
+  }
+  
+  // Responsive styles for screens smaller than 850px
+  @media (max-width: 850px) {
+    nav {
+      flex-direction: column;  // Stack the navbar vertically
+      align-items: center;  // Center the items horizontally
+      justify-content: center;  // Vertically center the content
+    }
+  
+    .logo {
+      font-size: 20px;  // Smaller logo font
+      margin-bottom: 10px;  // Space below the logo
+      text-align: center;  // Ensure the logo text is centered
+    }
+  
+    .nav-links {
+      display: flex;
+      flex-direction: column;  // Stack nav items vertically
+      gap: 10px;  // Reduce the space between nav items
+      align-items: center;  // Center the nav items horizontally
+    }
+  
+    .nav-links li {
+      display: block;  // Make each nav item a block for better stacking
+    }
+  
+    .nav-links li a {
+      font-size: 14px;  // Smaller text size for nav links
+      text-align: center;  // Center the text of the links
+    }
+  }  
