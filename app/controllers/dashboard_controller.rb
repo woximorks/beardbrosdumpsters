@@ -3,7 +3,7 @@ class DashboardController < ApplicationController
   before_action :check_approval
 
   def index
-
+    @user = current_user
   end
 
   private

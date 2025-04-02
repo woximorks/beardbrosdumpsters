@@ -1,2 +1,20 @@
-<h1>Home#index</h1>
-<p>Find me in app/views/home/index.html.erb</p>
+<h1>Welcome to Beard Bros Dumpsters</h1>
+<p>We offer a variety of dumpster delivery services to meet your needs!</p>
+
+<section class="landing-cards">
+  <% if @landing_cards.present? %>
+    <ul>
+      <% @landing_cards.each do |card| %>
+        <li>
+          <h3><%= card.title %></h3>
+          <p><%= card.description %></p>
+          <% if card.image.attached? %>
+            <%= image_tag card.image %>
+          <% end %>
+        </li>
+      <% end %>
+    </ul>
+  <% else %>
+    <p>Still working on some new features.</p>
+  <% end %>
+</section>

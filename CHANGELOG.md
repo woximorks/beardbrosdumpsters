@@ -1,3 +1,14 @@
+## [0.1.4] - 2025/03/14  
+### Pre-Release  
+
+### Added
+- Home page content added.
+- Dashboard updated.
+- dashboard_controller referencing current_user for the page as @user
+
+### Removed
+- confirmable from user model
+
 ## [0.1.3] - 2025/03/14
 ### Pre-Release
 
