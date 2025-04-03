@@ -3,5 +3,23 @@
 @import 'rental';
 @import 'article';
 @import 'video';
+@import 'dashboard';
 
 @import "simple_calendar";
+
+form input[type="text"], form textarea {
+    font-size: 1.2em;  /* Adjust font size for better readability */
+    padding: 10px;  /* Add padding for better touch/feel */
+    width: 100%;  /* Ensure inputs take up full width of the form */
+    border-radius: 5px;  /* Rounded corners for a cleaner look */
+    border: 1px solid #ccc;  /* Light border for contrast */
+    box-sizing: border-box;  /* Make sure padding doesn't overflow the box */
+  }
+  
+  form textarea {
+    height: 150px;  /* Set a fixed height for text areas */
+  }
+  
+  form input[type="text"] {
+    height: 40px;  /* Set a height for text inputs */
+  }

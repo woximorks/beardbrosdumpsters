@@ -1,5 +1,6 @@
 class LandingCardsController < ApplicationController
-  before_action :set_landing_card, only: %i[ show edit update destroy ]
+  before_action :authenticate_user!, only: [:create, :update, :destroy]
+  before_action :set_landing_card, only: [:show, :edit, :update, :destroy]
 
   # GET /landing_cards or /landing_cards.json
   def index

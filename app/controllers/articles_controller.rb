@@ -1,5 +1,5 @@
 class ArticlesController < ApplicationController
-  before_action :authenticate_user!, only: [:edit, :update]  # Ensure user is authenticated before edit and update actions
+  before_action :authenticate_user!, only: [:create, :update, :destroy]
   before_action :set_article, only: [:show, :edit, :update, :destroy]
   
   # GET /articles or /articles.json

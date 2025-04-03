@@ -1,3 +1,11 @@
+## [0.1.9] - 2025/04/02  
+### Dashboard Updates  
+
+### Changed  
+- **`dashboard/index.html.erb`**:  
+  - Displayed basic info for each object in the database (title only) with links to edit.
+  - Other changes made to related controllers for auth.
+
 ## [0.1.8] - 2025/04/02
 ### Pre-Release
 

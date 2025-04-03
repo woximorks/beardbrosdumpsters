@@ -1,9 +1,67 @@
-<h1>Welcome to Your Dashboard, <%= @user.email %></h1>
+<h2>Dashboard</h2>
 
-<p>Here you can manage your account and edit important site information.</p>
+<div class="dashboard-container">
+  <div class="section">
+    <h3>Landing Cards</h3>
+    <% if @landing_cards.present? %>
+      <ul>
+        <% @landing_cards.each do |landing_card| %>
+          <li>
+            <%= landing_card.title %>
+            <%= link_to 'Edit', edit_landing_card_path(landing_card), class: 'edit-link' %>
+          </li>
+        <% end %>
+      </ul>
+    <% else %>
+      <p>No landing cards available.</p>
+    <% end %>
+  </div>
 
-<section>
-  <h2>Actions</h2>
-  <%= link_to 'Edit Account', edit_user_registration_path %> | 
-  <%= link_to 'Sign Out', destroy_user_session_path, method: :delete %>
-</section>
+  <div class="section">
+    <h3>Articles</h3>
+    <% if @articles.present? %>
+      <ul>
+        <% @articles.each do |article| %>
+          <li>
+            <%= article.title %>
+            <%= link_to 'Edit', edit_article_path(article), class: 'edit-link' %>
+          </li>
+        <% end %>
+      </ul>
+    <% else %>
+      <p>No articles available.</p>
+    <% end %>
+  </div>
+
+  <div class="section">
+    <h3>Rentals</h3>
+    <% if @rentals.present? %>
+      <ul>
+        <% @rentals.each do |rental| %>
+          <li>
+            <%= rental.title %>
+            <%= link_to 'Edit', edit_rental_path(rental), class: 'edit-link' %>
+          </li>
+        <% end %>
+      </ul>
+    <% else %>
+      <p>No rentals available.</p>
+    <% end %>
+  </div>
+
+  <div class="section">
+    <h3>Videos</h3>
+    <% if @videos.present? %>
+      <ul>
+        <% @videos.each do |video| %>
+          <li>
+            <%= video.title %>
+            <%= link_to 'Edit', edit_video_path(video), class: 'edit-link' %>
+          </li>
+        <% end %>
+      </ul>
+    <% else %>
+      <p>No videos available.</p>
+    <% end %>
+  </div>
+</div>
