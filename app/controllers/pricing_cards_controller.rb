@@ -1,5 +1,5 @@
 class PricingCardsController < ApplicationController
-  before_action :authenticate_user!, only: [:create, :update, :destroy]
+  before_action :authenticate_user!, only: [:create, :edit, :update, :destroy]
   before_action :set_pricing_card, only: [:show, :edit, :update, :destroy]
 
   # GET /pricing_cards or /pricing_cards.json

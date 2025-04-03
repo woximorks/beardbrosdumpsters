@@ -1,5 +1,5 @@
 class LandingCardsController < ApplicationController
-  before_action :authenticate_user!, only: [:create, :update, :destroy]
+  before_action :authenticate_user!, only: [:create, :edit, :update, :destroy]
   before_action :set_landing_card, only: [:show, :edit, :update, :destroy]
 
   # GET /landing_cards or /landing_cards.json

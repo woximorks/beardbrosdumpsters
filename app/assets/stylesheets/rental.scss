@@ -11,6 +11,7 @@
 .simple-calendar {
   width: 100%;
   border-collapse: collapse;
+  
   a {
     text-decoration: none;
     color: black;
@@ -19,10 +20,11 @@
 
 th, td {
   width: 14.2857%;
-  height: 60px;
+  height: 80px; /* Increased height to better fit date + rentals */
   text-align: center;
-  vertical-align: middle;
+  vertical-align: top; /* Aligns content to the top */
   border: 1px solid #ddd;
+  padding: 5px;
 }
 
 th {
@@ -32,6 +34,7 @@ th {
 td {
   position: relative;
   font-size: 1.2em;
+  padding: 5px;
 }
 
 td.current-month {
@@ -42,12 +45,17 @@ td.today {
   background-color: #ffeb3b;
 }
 
+/* Style for the date number */
+.date-number {
+  font-size: 0.9em;
+  font-weight: bold;
+  display: block; /* Forces it to be on its own line */
+  margin-bottom: 5px;
+}
+
+/* Adjust rentals to display inline */
 .rental {
-  position: absolute;
-  bottom: 5px;
-  left: 50%;
-  transform: translateX(-50%);
+  display: inline-block;
+  margin: 2px; /* Small spacing between rentals */
   font-size: 1.2em;
-  padding: 5px;
-  color: #fff;
 }

@@ -1,11 +1,14 @@
 <p style="color: green"><%= notice %></p>
 
 <%= month_calendar(starting_day: :sunday) do |date| %>
-  <% @rentals.each do |rental| %>
-    <% if rental.start_time.to_date <= date && rental.end_time.to_date >= date %>
-      <div class="rental">
-        <%= link_to rental.emoji, rental_path(rental) %>
-      </div>
+  <div class="calendar-day">
+    <span class="date-number"><%= date.day %></span>
+    <% @rentals.each do |rental| %>
+      <% if rental.start_time.to_date <= date && rental.end_time.to_date >= date %>
+        <div class="rental">
+          <%= rental.emoji %>
+        </div>
+      <% end %>
     <% end %>
-  <% end %>
+  </div>
 <% end %>

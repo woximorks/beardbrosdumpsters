@@ -1,3 +1,24 @@
+## [0.1.10] - 2025/04/02  
+### Finalizing before release 
+
+### Changed  
+- **`index.html.erb`**:  
+  - Removed unnecessary bloat for a cleaner, more efficient layout.  
+- **`application.scss`**:  
+  - Set default font to Arial sitewide for a consistent look.  
+- **`calendar/show.html.erb`**:  
+  - Fixed calendar display issue by adjusting absolute positioning (thanks to ChatGPT!).  
+  - Added actual date display for each day on the calendar.  
+
+### Added  
+- Authentication for editing actions (to restrict unauthorized access).
+
+### Notes  
+- Improved calendar layout and functionality.  
+- Streamlined the homepage for better performance.  
+- Enhanced security with authentication for edits.
+
+
 ## [0.1.9] - 2025/04/02  
 ### Dashboard Updates  
 
