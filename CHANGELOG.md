@@ -1,4 +1,11 @@
-## [0.1.10] - 2025/04/02  
+## [1.0.0] - 2025/04/02
+
+### Changed
+- **Footer**: Centered for better alignment.
+- **App Name**: Updated to reflect new branding.
+- **Navigation**: Removed unnecessary items for a cleaner layout.
+
+## [0.1.10] - 2025/04/02
 ### Finalizing before release 
 
 ### Changed  
