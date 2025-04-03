@@ -1,3 +1,12 @@
+## [0.1.8] - 2025/04/02
+### Pre-Release
+
+### Added
+- Videos section created and styled.
+
+### Changed
+- Imported `articles.scss` into **`application.scss`** (oops).
+
 ## [0.1.7] - 2025/04/02
 ### Pre-Release
 

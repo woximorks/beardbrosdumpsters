@@ -1,14 +1,14 @@
 <p style="color: green"><%= notice %></p>
 
-<h1>Videos</h1>
-
-<div id="videos">
-  <% @videos.each do |video| %>
-    <%= render video %>
-    <p>
-      <%= link_to "Show this video", video %>
-    </p>
-  <% end %>
-</div>
-
-<%= link_to "New video", new_video_path %>
+<section class="videos">
+  <h2>Videos</h2>
+  <ul>
+    <% @videos.each do |video| %>
+      <li>
+        <iframe src='https://www.youtube.com/embed/<%= video.youtube_id %>?rel=0&autoplay=<%= params[:autoplay] || 0 %>' frameborder='0' allowfullscreen></iframe>
+        <h3><%= video.title %></h3>
+        <p><%= video.description %></p>
+      </li>
+    <% end %>
+  </ul>
+</section>
