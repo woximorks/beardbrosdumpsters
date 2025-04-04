@@ -18,6 +18,18 @@
   }
 }
 
+h5 {
+  font-weight: bold;
+  text-align: center;
+  margin: 10px 0;
+}
+
+.calendar-heading {
+  font-weight: bold;
+  text-align: center;
+  margin: 10px 0;
+}
+
 th, td {
   width: 14.2857%;
   height: 80px; /* Increased height to better fit date + rentals */

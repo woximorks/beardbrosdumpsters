@@ -17,6 +17,7 @@
 
   <div class="section">
     <h3>Articles</h3>
+    <%= link_to 'New Article', new_article_path %>
     <% if @articles.present? %>
       <ul>
         <% @articles.each do |article| %>
@@ -33,6 +34,9 @@
 
   <div class="section">
     <h3>Rentals</h3>
+    <h5>When adding a dumpster rental, use the following letter in the title field based on the necessary emoji.</h5>
+    <h6>A 🟩</h6><h6>B 🟦</h6><h6>C 🟥</h6><h6>D 🟧</h6>
+    <%= link_to 'New Rental', new_rental_path %>
     <% if @rentals.present? %>
       <ul>
         <% @rentals.each do |rental| %>
@@ -49,6 +53,8 @@
 
   <div class="section">
     <h3>Videos</h3>
+    <%= link_to 'New Video', new_video_path %>
+
     <% if @videos.present? %>
       <ul>
         <% @videos.each do |video| %>

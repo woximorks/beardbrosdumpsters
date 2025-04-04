@@ -1,5 +1,6 @@
 <p style="color: green"><%= notice %></p>
-
+<h5>We have 3 dumpsters available, and when viewing the calendar, each colored square represents a day where one of the available dumpsters has been rented and is considered not available.</h5>
+<h5>Generally, if the date(s) in question do not have 3 colored squares, we have a dumpster rental available, but please call to confirm availability or to schedule!</h5>
 <%= month_calendar(starting_day: :sunday) do |date| %>
   <div class="calendar-day">
     <span class="date-number"><%= date.day %></span>

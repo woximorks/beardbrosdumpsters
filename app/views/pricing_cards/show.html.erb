@@ -2,9 +2,11 @@
 
 <%= render @pricing_card %>
 
+<% if user_signed_in? %>
 <div>
   <%= link_to "Edit this pricing card", edit_pricing_card_path(@pricing_card) %> |
-  <%= link_to "Back to pricing cards", pricing_cards_path %>
+  <%= link_to "Back to dashboard", dashboard_path %>
 
   <%= button_to "Destroy this pricing card", @pricing_card, method: :delete %>
 </div>
+<% end %>
