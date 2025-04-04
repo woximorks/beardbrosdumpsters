@@ -2,9 +2,11 @@
 
 <%= render @rental %>
 
+<% if user_signed_in? %>
 <div>
   <%= link_to "Edit this rental", edit_rental_path(@rental) %> |
-  <%= link_to "Back to rentals", rentals_path %>
+  <%= link_to "Back to dashboard", dashboard_path %>
 
   <%= button_to "Destroy this rental", @rental, method: :delete %>
 </div>
+<% end %>

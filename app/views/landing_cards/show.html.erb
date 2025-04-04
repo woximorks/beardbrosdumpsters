@@ -2,9 +2,11 @@
 
 <%= render @landing_card %>
 
+<% if user_signed_in? %>
 <div>
   <%= link_to "Edit this landing card", edit_landing_card_path(@landing_card) %> |
-  <%= link_to "Back to landing cards", landing_cards_path %>
+  <%= link_to "Back to dashboard", dashboard_path %>
 
   <%= button_to "Destroy this landing card", @landing_card, method: :delete %>
 </div>
+<% end %>

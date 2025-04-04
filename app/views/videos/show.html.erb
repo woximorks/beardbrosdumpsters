@@ -2,9 +2,11 @@
 
 <%= render @video %>
 
+<% if user_signed_in? %>
 <div>
   <%= link_to "Edit this video", edit_video_path(@video) %> |
-  <%= link_to "Back to videos", videos_path %>
+  <%= link_to "Back to dashboard", dashboard_path %>
 
   <%= button_to "Destroy this video", @video, method: :delete %>
 </div>
+<% end %>

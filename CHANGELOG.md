@@ -1,3 +1,26 @@
+## [1.0.1] - 2025/04/02
+### Dashboard Enhancements & Calendar Context
+
+### Added
+- **Navigation**:
+  - "Edit Profile" link added to nav for signed-in users.
+- **Dashboard**:
+  - Ability to create new `Article` and `Video` entries directly from the dashboard.
+
+### Changed
+- **Rental Calendar Context**:
+  - `rentals/index.html.erb` now includes a short explanation of what the calendar is displaying.
+- **Scaffold Navigation**:
+  - All `edit` and `show` pages now include a link back to the dashboard for smoother admin workflow.
+
+### Removed
+- **`articles/index.html.erb`**:
+  - Removed the "Show this article" link to simplify the index view.
+
+### Notes
+- Enhances UX for admin users managing content.
+- Provides clearer calendar context for rentals.
+
 ## [1.0.0] - 2025/04/02
 
 ### Changed
