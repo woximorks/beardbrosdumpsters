@@ -1,3 +1,12 @@
+
+
+## [1.0.2] - 2025/04/02
+### Dashboard Enhancements & Calendar Context
+
+### Added
+- **Navigation**:
+  - Contact phone number listed under logo
+
 ## [1.0.1] - 2025/04/02
 ### Dashboard Enhancements & Calendar Context
 
